@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Projeto CSS - Links, Parágrafos e Destaque</title>
+  <style>
+    /* 1. Estilo dos links */
+    a {
+      color: red;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: lemonchiffon;
+    }
+
+    /* 2. Estilo dos parágrafos */
+    p {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 + p {
+      font-weight: bold;
+    }
+
+    /* 3. Estilo da classe .destaque */
+    .destaque {
+      font-family: Arial, sans-serif;
+    }
+
+    p.destaque {
+      font-weight: bold;
+    }
+
+    strong.destaque {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Título Principal</h1>
+  <p>Este parágrafo ficará em negrito por estar logo após o h1.</p>
+
+  <p>Parágrafo comum com fonte Arial.</p>
+  <p class="destaque">Parágrafo com classe <code>.destaque</code> (negrito).</p>
+
+  <strong class="destaque">Texto <code>&lt;strong&gt;</code> com classe <code>.destaque</code> (vermelho).</strong>
+
+  <br><br>
+
+  <a href="#">Este é um link</a>
+
+</body>
+</html>
